@@ -1,0 +1,77 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Colore di sfondo scuro */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff; /* Testo bianco per contrasto */
+}
+
+header {
+  background-color: #005AB6; /* Colore primario */
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* Effetto neon */
+  box-shadow: 0 0 10px #005AB6, 0 0 20px #005AB6, 0 0 40px #005AB6, 0 0 60px #005AB6, 0 0 80px #005AB6, 0 0 100px #005AB6, 0 0 120px #005AB6;
+}
+
+header h1 {
+  color: #fff;
+}
+
+.main-content {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.device-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.device-option {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #121212; /* Cambiato il colore di sfondo */
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1); /* Cambiato il colore dell'ombra */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Aggiunto il cambio di transizione per l'ombra */
+}
+
+.device-option img {
+  width: 100px;
+  height: 100px;
+  filter: invert(1); /* Inverti i colori dell'immagine */
+}
+
+.device-option p {
+  margin-top: 10px;
+}
+
+.device-option:hover {
+  transform: translateY(-5px);
+  /* Effetto neon */
+  box-shadow: 0 0 10px #005AB6, 0 0 20px #005AB6, 0 0 30px #005AB6, 0 0 40px #005AB6, 0 0 50px #005AB6, 0 0 60px #005AB6, 0 0 70px #005AB6;
+}
+
+footer {
+  background-color: #FDD700; /* Colore secondario */
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* Effetto neon */
+  box-shadow: 0 0 10px #FDD700, 0 0 20px #FDD700, 0 0 30px #FDD700, 0 0 40px #FDD700, 0 0 50px #FDD700, 0 0 60px #FDD700, 0 0 70px #FDD700;
+}
