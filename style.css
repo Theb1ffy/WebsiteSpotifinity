@@ -1,0 +1,70 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Colore di sfondo scuro */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuisce lo spazio rimanente tra gli elementi */
+  color: #fff; /* Testo bianco per contrasto */
+}
+
+header {
+  background-color: #005AB6; /* Colore primario */
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* Effetto neon */
+  box-shadow: 0 0 10px #005AB6, 0 0 20px #005AB6, 0 0 40px #005AB6, 0 0 60px #005AB6, 0 0 80px #005AB6, 0 0 100px #005AB6, 0 0 120px #005AB6;
+}
+
+header h1 {
+  color: #fff;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Imposta il contenuto principale su una colonna */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-content h2,
+.main-content p {
+  margin-bottom: 20px;
+}
+
+.main-content button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #005AB6; /* Colore primario */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Effetto neon */
+  box-shadow: 0 0 10px #005AB6, 0 0 20px #005AB6, 0 0 30px #005AB6, 0 0 40px #005AB6, 0 0 50px #005AB6, 0 0 60px #005AB6, 0 0 70px #005AB6;
+}
+
+.main-content button:hover {
+  background-color: #00478f;
+  box-shadow: 0 0 10px#00478f 0 0 20px #00478f, 0 0 30px #00478f, 0 0 40px #00478f, 0 0 50px #00478f, 0 0 60px #00478f, 0 0 70px #00478f;
+}
+
+footer {
+  background-color: #FDD700; /* Colore secondario */
+  padding: 20px;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* Effetto neon */
+  box-shadow: 0 0 10px #FDD700, 0 0 20px #FDD700, 0 0 30px #FDD700, 0 0 40px #FDD700, 0 0 50px #FDD700, 0 0 60px #FDD700, 0 0 70px #FDD700;
+}
