@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotifinity - Scegli il tuo dispositivo</title>
+  <link rel="stylesheet" href="phonechoser.css">
+</head>
+  <style>
+    header {
+      position: relative;
+    }
+
+    header img {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 50px; /* Dimensione desiderata */
+      height: auto; /* Per mantenere l'aspetto proporzionato */
+    }
+  </style>
+<body>
+  <header>
+    <h1>Spotifinity</h1>
+    <a href="https://linktr.ee/spotifinity">
+      <img src="25231.png" alt="Immagine 25231">
+    </a>
+  </header>
+  <section class="main-content">
+    <h2>Seleziona il tuo dispositivo</h2>
+    <div class="device-options">
+      <div class="device-option" id="androidOption">
+        <img src="android-icon.png" alt="Android">
+        <p>Android</p>
+      </div>
+      <div class="device-option" id="pcOption">
+        <img src="pc-icon.png" alt="PC">
+        <p>PC</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+  </footer>
+
+  <script>
+    // Aggiungi un evento di click all'opzione "Android"
+    document.getElementById("androidOption").addEventListener("click", function() {
+      window.location.href = "https://d8c1e516-68d0-4d22-be6b-fadf03de80fc-00-ij1e0qxme4n7.riker.replit.dev/AndroidTutorial.html";
+    });
+
+    // Aggiungi un evento di click all'opzione "PC"
+    document.getElementById("pcOption").addEventListener("click", function() {
+      window.location.href = "https://d8c1e516-68d0-4d22-be6b-fadf03de80fc-00-ij1e0qxme4n7.riker.replit.dev/pcdownload.html";
+    });
+  </script>
+</body>
+</html>
