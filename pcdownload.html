@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download Spotifinity PC</title>
+<link rel="stylesheet" href="Androidtutorial.css"> <!-- Assicurati di sostituire "styles.css" con il nome del tuo file CSS -->
+</head>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      position: relative;
+    }
+
+    header img {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 50px; /* Dimensione desiderata */
+      height: auto; /* Per mantenere l'aspetto proporzionato */
+    }
+
+    .code-container {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #222;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      overflow-x: auto; /* Scrollbar orizzontale se il codice è troppo lungo */
+    }
+
+    .code {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+      white-space: pre-wrap;
+    }
+
+    .copy-button {
+      display: block;
+      width: 120px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .copy-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+<body>
+
+<header>
+  <h1 style="text-align: center; margin-top: 20px;">Spotifinity Download PC</h1>
+  <a href="https://linktr.ee/spotifinity">
+    <img src="25231.png" alt="Immagine 25231" style="position: absolute; top: 10px; right: 10px; width: 50px;">
+  </a>
+</header>
+
+<div class="main-content">
+  <div class="code-container">
+    <pre class="code">iwr -useb https://raw.githubusercontent.com/Theb1ffy/Install-Spotifinity-Computer/main/install.ps1 | iex</pre>
+  </div>
+  <p style="text-align: center; color: #ccc; font-style: italic;">Esegui questo comando su PowerShell, non su CMD.</p>
+  <button class="copy-button" onclick="copyCode()">Copia il codice</button>
+</div>
+
+<footer>
+</footer>
+
+<script>
+  function copyCode() {
+    var codeElement = document.querySelector('.code');
+    var codeToCopy = codeElement.innerText;
+
+    // Creazione di un elemento textarea per il testo
+    var textarea = document.createElement('textarea');
+    textarea.value = codeToCopy;
+
+    // Aggiungi l'elemento textarea alla pagina
+    document.body.appendChild(textarea);
+
+    // Seleziona e copia il testo nell'elemento textarea
+    textarea.select();
+    document.execCommand('copy');
+
+    // Rimuovi l'elemento textarea dalla pagina
+    document.body.removeChild(textarea);
+
+    // Avvisa l'utente che il testo è stato copiato
+    alert("Il codice è stato copiato negli appunti.");
+
+    // Avvia l'embed del video
+    var embedContainer = document.createElement('div');
+    embedContainer.style.width = "100%";
+    embedContainer.style.maxWidth = "800px"; // Imposta la larghezza massima desiderata
+    embedContainer.style.margin = "20px auto"; // Centra l'embed
+    embedContainer.innerHTML = `
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/Dm-YkRNSdq0?rel=0&autoplay=1&controls=0&showinfo=0&loop=1&disablekb=1&showinfo=0" 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                frameborder="0" allowfullscreen>
+        </iframe>
+      </div>
+    `;
+    document.body.appendChild(embedContainer);
+  }
+</script>
+
+</body>
+</html>
