@@ -109,7 +109,10 @@
     embedContainer.style.margin = "20px auto"; // Centra l'embed
     embedContainer.innerHTML = `
       <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-        <iframe src="https://www.youtube-nocookie.com/embed/Dm-YkRNSdq0?vq=hd1080&autoplay=1&fs=0&controls=0&disablekb=1" width="560" height="315" title="Tutorial come scaricare Spotfinity" frameborder="0"></iframe>
+        <iframe src="https://www.youtube.com/embed/Dm-YkRNSdq0?rel=0&autoplay=1&controls=0&showinfo=0&loop=1&disablekb=1&showinfo=0&vq=hd1080" 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                frameborder="0" allowfullscreen>
+        </iframe>
       </div>
     `;
     document.body.appendChild(embedContainer);
